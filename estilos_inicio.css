@@ -1,0 +1,419 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+.nav1, .nav2, .nav3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav1 {
+    width: 33vw;
+}
+
+.nav2 {
+    width: 34vw;
+    justify-content: space-around;
+}
+
+.nav3 {
+    width: 33vw;
+}
+
+.logo {
+    max-height: 80%; 
+}
+
+.nav2 i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav3 ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav3 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15vh; 
+}
+
+#seccion_inicio {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+
+#seccion_funciones {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh; 
+}
+
+#header_funciones {
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 15vh); 
+}
+
+#header_funciones {
+    width: 100%;
+    position: relative;
+    height: 65vh; 
+    overflow: hidden; 
+}
+
+.header_imagen {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+#barra_busqueda {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 50px;
+    width: 50%; 
+}
+
+#barra_busqueda input {
+    width: 90%; 
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+}
+
+#barra_busqueda button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 10px; 
+}
+
+
+#contenido_funciones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px; 
+}
+
+.articulo_funcion {
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 150px;
+}
+
+.articulo_funcion i {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.articulo_funcion h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.articulo_funcion p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.articulo_funcion:hover {
+    transform: translateY(-10px); 
+}
+
+#contenido_inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#contenido_sup {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+#contenido_sup h1 {
+    font-size: 3rem; 
+}
+
+#contenido_inf {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px; 
+}
+
+.divisiones_contenido {
+    width: 13vw;
+    height: 25vh;
+    margin: 1rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem; 
+}
+
+.divisiones_contenido p {
+    margin-top: 10px; 
+} 
+
+#seccion_contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.mapaGoogle {
+    width: 100vw; 
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+.columnaDatosFormulario {
+    display: flex;
+    width: 100vw;
+    height: 50vh; 
+    margin: 0; 
+    padding: 0; 
+    padding-top: 20px; 
+}
+
+.datosContacto {
+    width: 40vw;
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 30px;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+.lista_2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.li_titulo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #007BFF; 
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+}
+
+.li_texto {
+    margin-left: 55px; 
+    margin-bottom: 20px; 
+    font-size: 1.2rem; 
+    color: #555; 
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.formulario {
+    width: 60vw; 
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    margin: 0;
+}
+
+#formulario_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+    margin-top: 20px; 
+}
+
+#formulario_2 input, #formulario_2 textarea {
+    width: 100%;
+    padding: 12px; 
+    margin: 8px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem; 
+}
+
+#formulario_2 button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; 
+    margin-top: 20px; 
+}
+
+#formulario_2 button:hover {
+    background-color: #0056b3;
+}
+
+.campo-nombre-email {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.campo {
+    width: 48%;
+}
+
+#seccion_comentarios {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.formulario_comentarios {
+    margin-bottom: 20px;
+}
+
+#comentario {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#btn_comentar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn_comentar:hover {
+    background-color: #45a049;
+}
+
+.comentarios_previos {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.comentario p {
+    font-size: 1rem;
+}
+
+.comentario strong {
+    font-weight: bold;
+}
+ 
